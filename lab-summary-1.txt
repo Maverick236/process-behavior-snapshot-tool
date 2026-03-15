@@ -1,0 +1,21 @@
+Lab Summary 1
+
+Tool used:
+Python + psutil + Sysinternals
+
+What I checked:
+I collected a snapshot of selected browser and launcher processes and recorded their parent processes.
+
+What I found:
+Most msedge.exe child processes were spawned by a main msedge.exe process.
+The main msedge.exe process was spawned by explorer.exe.
+No unusual parent-child relationships were found.
+One steam.exe process had an unknown parent because the parent could not be resolved at collection time.
+
+Why it matters:
+Parent-child process relationships help show whether process behavior looks normal or suspicious.
+
+Files created:
+C:\GameSecurityLab\projects\snapshot_all_20260315_125327.csv
+C:\GameSecurityLab\projects\snapshot_unusual_20260315_125327.csv
+C:\GameSecurityLab\projects\snapshot_unknown_20260315_125327.csv
