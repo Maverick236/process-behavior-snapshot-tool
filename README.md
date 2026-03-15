@@ -130,3 +130,41 @@ It flags them when they are spawned by watched parent processes such as:
 
 python suspicious\_process\_detector.py
 
+
+
+\## Additional script: TCP Connection Snapshot
+
+
+
+The repository also includes `tcp\_connection\_snapshot.py`.
+
+
+
+This script collects live TCP/INET connection data for selected browser and launcher processes.
+
+
+
+\### What it records
+
+
+
+\- PID
+
+\- process name
+
+\- connection status
+
+\- local address
+
+\- remote address
+
+
+
+\### Run
+
+
+
+```powershell
+
+python tcp\_connection\_snapshot.py
+
