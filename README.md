@@ -72,3 +72,61 @@
 
 # python -m pip install psutil
 
+
+
+\## Additional script: Suspicious Process Detector
+
+
+
+The repository also includes `suspicious\_process\_detector.py`.
+
+
+
+This script checks for suspicious process names such as:
+
+
+
+\- `cmd.exe`
+
+\- `powershell.exe`
+
+\- `pwsh.exe`
+
+\- `wscript.exe`
+
+\- `cscript.exe`
+
+\- `rundll32.exe`
+
+\- `mshta.exe`
+
+
+
+It flags them when they are spawned by watched parent processes such as:
+
+
+
+\- `msedge.exe`
+
+\- `chrome.exe`
+
+\- `firefox.exe`
+
+\- `steam.exe`
+
+\- `steamwebhelper.exe`
+
+\- `epicgameslauncher.exe`
+
+\- `discord.exe`
+
+
+
+\### Run
+
+
+
+```powershell
+
+python suspicious\_process\_detector.py
+
